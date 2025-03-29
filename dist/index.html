@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="icon" href="/web_project_2/favicon.ico" type="image/x-icon" />
+    
+    
+    <script type="module" crossorigin src="/web_project_2/assets/index-89ed61b6.js"></script>
+    <link rel="stylesheet" href="/web_project_2/assets/index-b41ba72c.css">
+  </head>
+  <body>
+    <header>
+      <h1>Weather App</h1>
+      <button id="theme-toggle">Toggle Theme</button>
+    </header>
+
+    <main>
+      <div id="location-input">
+        <label for="city-input">Enter City:</label>
+        <input type="text" id="city-input" placeholder="e.g., London" />
+        <button id="get-weather" class="get-weather-button">Get Weather</button>
+      </div>
+
+      <div id="weather-details" class="hidden">
+        <h2>Weather in <span id="city-name"></span></h2>
+        <p>Temperature: <span id="temperature"></span>°C</p>
+        <p>Condition: <span id="condition"></span></p>
+        <a id="weather-link" href="#" target="_blank">More details</a>
+      </div>
+
+      <div id="error-message" class="hidden">
+        <p>Could not retrieve weather data. Please try again.</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Data provided by
+        <a
+          href="https://www.weatherapi.com/"
+          title="Free Weather API"
+          target="_blank"
+          >WeatherAPI.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
