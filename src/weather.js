@@ -1,7 +1,7 @@
 import { updateWeatherDetails, displayError } from "./main.js";
 
 const API_KEY = "719cf7d3e3934d1b89090733252903";
-const API_URL = "http://api.weatherapi.com/v1/current.json";
+const API_URL = "https://api.weatherapi.com/v1/current.json";
 
 async function getWeather(city) {
   try {
