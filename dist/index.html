@@ -7,35 +7,37 @@
     <link rel="icon" href="/web_project_2/favicon.ico" type="image/x-icon" />
     
     
-    <script type="module" crossorigin src="/web_project_2/assets/index-ada4fcd6.js"></script>
-    <link rel="stylesheet" href="/web_project_2/assets/index-b41ba72c.css">
+    <script type="module" crossorigin src="/web_project_2/assets/index-1d82ab76.js"></script>
+    <link rel="stylesheet" href="/web_project_2/assets/index-d2a84b62.css">
   </head>
   <body>
     <header>
       <h1>Weather App</h1>
-      <button id="theme-toggle">Toggle Theme</button>
+      <button id="theme-toggle">Change theme</button>
     </header>
+    <div class="weather-container">
+      <main>
+        <div id="location-input">
+          <label for="city-input">Enter City:</label>
+          <input type="text" id="city-input" placeholder="City Name" />
+          <ul id="autocomplete-suggestions"></ul>
+          <button id="get-weather-button" class="get-weather-button">
+            Get Weather
+          </button>
+        </div>
 
-    <main>
-      <div id="location-input">
-        <label for="city-input">Enter City:</label>
-        <input type="text" id="city-input" placeholder="City Name" />
-        <ul id="autocomplete-suggestions"></ul>
-        <button id="get-weather" class="get-weather-button">Get Weather</button>
-      </div>
+        <div id="weather-details" class="hidden">
+          <h2>Weather in <span id="city-name"></span></h2>
+          <p>Temperature: <span id="temperature"></span>°C</p>
+          <p>Condition: <span id="condition"></span></p>
+          <a id="weather-link" href="#"></a>
+        </div>
 
-      <div id="weather-details" class="hidden">
-        <h2>Weather in <span id="city-name"></span></h2>
-        <p>Temperature: <span id="temperature"></span>°C</p>
-        <p>Condition: <span id="condition"></span></p>
-        <a id="weather-link" href="#" target="_blank">More details</a>
-      </div>
-
-      <div id="error-message" class="hidden">
-        <p>Could not retrieve weather data. Please try again.</p>
-      </div>
-    </main>
-
+        <div id="error-message" class="hidden">
+          <p>Could not retrieve weather data. Please try again.</p>
+        </div>
+      </main>
+    </div>
     <footer>
       <p>
         Data provided by
@@ -46,6 +48,7 @@
           >WeatherAPI.com</a
         >
       </p>
+      <p>Made by Anastasia Makoveeva</p>
     </footer>
   </body>
 </html>
